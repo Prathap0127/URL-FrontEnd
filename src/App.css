@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Pagination Color */
+.pagination > li > a {
+  background-color: white;
+  color: #dc3a4a;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+  color: #dc3a4a;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > li.page-item.active > span {
+  background-color: #dc3a4a !important;
+  border-color: #ddd;
+}
+.pagination > li.page-item.active > span:hover {
+  color: white;
+  background-color: #dc3a4a !important;
+  border-color: #ddd;
+}
+
+.page-item > .active > a {
+  color: white;
+  background-color: purple;
+  border: solid 1px purple;
+}
+
+.page-item > .active > a:hover {
+  color: white;
+  background-color: #dc3a4a;
+  border: solid 1px #dc3a4a;
+}
